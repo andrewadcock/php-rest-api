@@ -73,7 +73,6 @@ swiftmailer:
 # FOSRest Configuration
 fos_rest:
     body_listener: true
-        default_format: json
     format_listener:
         enabled: true
         rules:
