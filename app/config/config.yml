@@ -84,3 +84,12 @@ fos_rest:
             json: true
     # Disable CSRF protection
     disable_csrf_role: ROLE_API
+
+
+#JMSSerializer Configuration
+jms_serializer:
+    metadata:
+        auto_detection: true
+    handlers:
+        datetime:
+            default_format: c
