@@ -77,6 +77,7 @@ fos_rest:
         enabled: true
         rules:
             - { path: '^/api', priorities: ['json'], fallback_format: json }
+            - { path: '^/', priorities: [ 'html', '*/*'], fallback_format: html, prefer_extension: true }
     param_fetcher_listener: true
     view:
         view_response_listener: 'force'
